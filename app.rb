@@ -17,4 +17,8 @@ class App < Sinatra::Base
     @center = params["center"]
     erb :team
   end
+  
+  get '/team' do
+    erb :team
+  end
 end
