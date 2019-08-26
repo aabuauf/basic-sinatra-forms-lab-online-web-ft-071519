@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @all << "Shooting Guard: #{params["sg"]}"
     @all << "Shooting Forward: #{params["sf"]}"
     @all << "Power Forward: #{params["pf"]}"
-    @all << "Center: #{params["center"]}"
+    @all << "Center: #{params["c"]}"
     erb :team
   end
   
