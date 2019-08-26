@@ -6,14 +6,10 @@
  </head>
  <body>
  
-   <h2>TeamName: <%= @name%></h2>
-    <h3><%= @coach%></h3>
-    <h3><%= @pg%></h3>
-    <h3><%= @sg%></h3>
-    <h3><%= @sf%></h3>
-    <h3><%= @pf%></h3>
-    <h3><%= @center%></h3>
-
+   <h2><%= @all[0]%></h2>
+    <% @all.each do |line| %>
+        <h3><%= line %></h3>
+    <% end %>
  </body>
 </html>
 
