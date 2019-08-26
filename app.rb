@@ -9,13 +9,13 @@ class App < Sinatra::Base
   
   post '/newteam' do
     @all = []
-    @all << "params["name"]"
-    @coach = params["coach"]
-    @pg = params["pg"]
-    @sg = params["sg"]
-    @sf = params["sf"]
-    @pf = params["pf"]
-    @center = params["center"]
+    @all << "Team Name: #{params["name"]}"
+    @all << "Coach: #{params["coach"]}"
+    @all << "Point Guard: #{params["pg"]}"
+    @all << "Shooting Guard: #{params["sg"]}"
+    @all << "Shooting Forward: #{params["sf"]}"
+    @all << "power Forward: #{params["pf"]}"
+    @all << "Center: #{params["center"]}"
     erb :team
   end
   
